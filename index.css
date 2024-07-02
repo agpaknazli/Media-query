@@ -1,0 +1,176 @@
+/* https://fullstack17tr.slack.com/archives/C076WHBCLCW/p1719942013875999 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* MEDIA QUERY BÖLÜMÜ  1880 PX EKRAN İÇİN */
+
+.contanier{
+    background-color: #EFEFEF;
+    padding: 2.5rem;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-top: 0.4rem solid #D8D7D7;
+    border-bottom: 0.4rem solid #D8D7D7;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.card img{
+    width: 50%;
+  
+  
+}
+
+.info-section{
+  
+    max-height: 75%;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.product-details{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 35px 40px ;
+}
+
+.product-model{
+    color: #333333;
+    font-weight: 700;
+}
+
+.product-type{
+    background-color:#2175F5 ;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 10px 4px 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+
+}
+
+.product-info{
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.storage h3{
+    font-weight: 600;
+    color: #3a3a3a;
+} 
+
+.stroge button{
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+
+} 
+
+.storage button:hover{
+    background-color: #2175F5;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.buy-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.buy-product a{
+text-decoration: none;
+background-color: #2175F5;
+color: #ffffff;
+font-weight: 500;
+letter-spacing: 1px;
+padding: 0.8rem 1rem ;
+}
+
+.buy-product h1{
+    color: #333333;
+    font-size: 2rem;
+    letter-spacing: 1px ;
+}
+
+.dollar-sing{
+
+    font-size: 1.4rem;
+    vertical-align: top;
+}
+
+@media(max-width:1280px){
+    .contanier{
+        padding: 5rem;
+       background-color: #424242;
+    }
+    .card{
+        height: 70vh;
+        box-shadow: 0 12px 24px rgba(209,208,208,0.4);
+        border-radius: 1rem;
+        border-bottom: 0.4rem solid #abaaeb;
+        background-color: #ced7ff;
+        transition: all 0.7s ease;
+    }
+    .info-section{
+        gap: 0.1rem;
+    }
+    .product-details{
+        padding: 45px 15px 35px 15px;
+    }
+    .product-model h1{
+        font-size: 1.6rem;
+    }
+
+product-description p{
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+.product-description p:hover{
+    -webkit-line-clamp: unset;
+    white-space: normal;
+}
+
+.storage h3{
+    font-size: 1rem;
+}
+
+.storage button{
+    height: 1.2rem;
+    width: 3rem;
+    font-size: 0.8rem;
+    border-radius: 7px;
+    margin: 0 5px ;
+
+}
+/* .buy-product a{
+
+} */
+
+
+}
